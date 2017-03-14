@@ -1,0 +1,172 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      4860,        162]
+NotebookOptionsPosition[      4263,        138]
+NotebookOutlinePosition[      4606,        153]
+CellTagsIndexPosition[      4563,        150]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"L", "[", 
+   RowBox[{"V_", ",", "LW_", ",", "LB_"}], "]"}], " ", ":=", 
+  RowBox[{
+   RowBox[{"a", "[", 
+    RowBox[{"LW", ",", "LB"}], "]"}], 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"Max", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"V", "+", 
+         RowBox[{"b", "[", 
+          RowBox[{"LW", ",", "LB"}], "]"}]}], ")"}], ",", "0"}], "]"}], ")"}],
+     "2.4"]}]}], "\n", 
+ RowBox[{
+  RowBox[{"a", "[", 
+   RowBox[{"LW_", ",", "LB_"}], "]"}], ":=", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox["LW", 
+      FractionBox["1", "2.4"]], "-", 
+     SuperscriptBox["LB", 
+      FractionBox["1", "2.4"]]}], ")"}], "2.4"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"b", "[", 
+    RowBox[{"LW_", ",", "LB_"}], "]"}], ":=", 
+   FractionBox[
+    SuperscriptBox["LB", 
+     FractionBox["1", "2.4"]], 
+    RowBox[{
+     SuperscriptBox["LW", 
+      FractionBox["1", "2.4"]], "-", 
+     SuperscriptBox["LB", 
+      FractionBox["1", "2.4"]]}]]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.6532934713313184`*^9, 3.6532938594337263`*^9}, {
+  3.653293919525581*^9, 3.653293963672862*^9}, {3.653294165806927*^9, 
+  3.653294242413737*^9}, {3.65329432529871*^9, 3.653294325476827*^9}, {
+  3.6532947747778263`*^9, 3.653294838925372*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesLabel->{None, None},
+  AxesOrigin->{0.2, 0},
+  Method->{},
+  PlotRange->{{0.1, 1}, {0., 0.}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output",
+ CellChangeTimes->{{3.6532947960209155`*^9, 3.6532948334977717`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.653294527729972*^9, 3.6532945277569904`*^9}}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{{3.653294106476576*^9, 3.6532941483293343`*^9}, {
+  3.65329433561155*^9, 3.653294395597336*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"y", "\[Equal]", 
+    RowBox[{"a", "*", 
+     RowBox[{"b", "^", "x"}]}]}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.653294472682462*^9, 3.6532944849365897`*^9}, {
+  3.6532946598235826`*^9, 3.653294661315572*^9}, {3.653294725070858*^9, 
+  3.6532947260134907`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Solve", "::", "ifun"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Inverse functions are being used by \
+\[NoBreak]\\!\\(Solve\\)\[NoBreak], so some solutions may not be found; use \
+Reduce for complete solution information. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Solve/ifun\\\", ButtonNote -> \
+\\\"Solve::ifun\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.653294726337697*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"x", "\[Rule]", 
+    FractionBox[
+     RowBox[{"Log", "[", 
+      FractionBox["y", "a"], "]"}], 
+     RowBox[{"Log", "[", "b", "]"}]]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.653294661701829*^9, 3.6532947263386984`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", 
+     FractionBox[
+      RowBox[{"Log", "[", 
+       FractionBox["y", "a"], "]"}], 
+      RowBox[{"Log", "[", "b", "]"}]]}], "}"}], "}"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6532945233030357`*^9, 3.6532945687872033`*^9}, {
+   3.653294622187621*^9, 3.6532946500120754`*^9}, 3.653294772756485*^9}]
+},
+WindowSize->{1904, 943},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1409, 43, 211, "Input"],
+Cell[1991, 67, 374, 12, 241, "Output"]
+}, Open  ]],
+Cell[2380, 82, 94, 1, 31, InheritFromParent],
+Cell[2477, 85, 161, 2, 52, "Input"],
+Cell[CellGroupData[{
+Cell[2663, 91, 333, 8, 31, "Input"],
+Cell[2999, 101, 531, 11, 21, "Message"],
+Cell[3533, 114, 283, 8, 56, "Output"]
+}, Open  ]],
+Cell[3831, 125, 428, 11, 99, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)
+

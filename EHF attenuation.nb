@@ -1,0 +1,279 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      9076,        270]
+NotebookOptionsPosition[      8386,        241]
+NotebookOutlinePosition[      8731,        256]
+CellTagsIndexPosition[      8688,        253]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"b", "[", "f_", "]"}], ":=", 
+   FractionBox[
+    SuperscriptBox["f", "2"], 
+    RowBox[{"1", "+", 
+     RowBox[{
+      SuperscriptBox["10", 
+       RowBox[{"-", "4"}]], 
+      SuperscriptBox["f", "2"]}]}]]}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"frequency", " ", "f", " ", "in", " ", "GHz"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Eta]", "[", 
+   RowBox[{"f1_", ",", "f2_"}], "]"}], ":=", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    FractionBox[
+     RowBox[{"b", "[", "f1", "]"}], 
+     RowBox[{"b", "[", "f2", "]"}]], ")"}], 
+   RowBox[{"1", "-", 
+    RowBox[{"1.12", "*", 
+     SuperscriptBox["10", 
+      RowBox[{"-", "3"}]], 
+     SqrtBox[
+      FractionBox[
+       RowBox[{"b", "[", "f2", "]"}], 
+       RowBox[{"b", "[", "f1", "]"}]]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"b", "[", "f1", "]"}], ")"}], 
+      "0.55"]}]}]]}], "\[IndentingNewLine]", 
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Abs", "[", 
+    RowBox[{"10", "*", 
+     RowBox[{"Log", "[", 
+      RowBox[{"10", ",", 
+       RowBox[{"\[Eta]", "[", 
+        RowBox[{"7", ",", "f"}], "]"}]}], "]"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"f", ",", "7", ",", "55"}], "}"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0"}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6307426206876755`*^9, 3.6307428848327837`*^9}, {
+  3.6307429650013695`*^9, 3.6307429817613277`*^9}, {3.630743012721099*^9, 
+  3.630743021769616*^9}, {3.630743083759162*^9, 3.6307431868830605`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {}, 
+   {Hue[0.67, 0.6, 0.6], LineBox[CompressedData["
+1:eJwVx3840wkAx/FF1+SKys802rCxzfZFKYR9NjPxTdIhrCyMhX6QK45nTof0
+YBdSHkdNl36iHyxK6SoqOv2SW3kiT+p64uqWwqUO1/3xft7PixG7Y328HoVC
+Cfra/98tahNSKDT46B6dvL9Y49NoUq4wMaZBzdOZuySXCXSvklQsGxr8Js5a
+fIz/VbClwLJvjRcNWool/5q0URDVnZZSmUFDb8Fxh8P+NwWCcI7adZSGjYnO
+NgvpPQKDpIp/5UPWMK7iZuY8fiGoLE1t6epYijYN/UmF76jgBv6mb3rHgLIu
+xPb8AAU9soiYhj/ssK6jhf2hmYpt0ZHpiRomGu3v56u75iO54aLF5SsO8M5/
+/vTAy4UoOCZp2lzDxkSeIjZzpynmjLj2VTVwka0cSGyfMYfxguZe0QUeavYw
+k7uCF8NtYNvvwjICaYJOm6KQJZApwRq554yRdydqjkdao0kml8tuuCAuyb3S
+l74U3Re+Uxmed8XggrDXkzF0mNenZM00LkOdvGrpPncGdJMOipra5YiUhPao
+xhn4rJtnWXTGDRvizEhZiy3uhrU11dWtgDY4Nz4x2Q6OxgZBGVUrwRs3s3tv
+aI9LKTl1P6vdEWY9qCs8Zw8t8wA1pMwDnN3pTs+FTLByHztuqvSEXdPBh4Z9
+TKxaN7hcXbUK3SfSkgoSWBhMyfdRFXvho2fXxeuvWNB4RM6/VeqNIuv9d1sV
+DrAMv9N3Kt8H23Of9Tztd4BwiFJ683sBrmpwh0Y6Yu23mjkmXkBJOdf5fZsj
+RA807VYXAaNa7qY+ezaCFWvi/N2F6OqO5s8pYcOnJeCT0WUhFiruJZqMszHu
+bFrs5CKCjYFK9iCYg47sXXo7mkQwLNQTl53lQDpxLJ3K84Wnn/NMlz4XvUz3
+Ic9aX2S/CTVJDeUigR1HHGCKUct4X/biFBe/hUuzhEfE8LHKezQ8xoVLxMhp
+U4Yfbj/lvMkUOyEpV/LEu8oPjIyMnpXFTtibYPB5lokEdyviVogeOuGKdczM
+SLkEb8/NS6q24KFleq8+x8gf5TRRPyWCh+4m3xFVqT/401KJsoqHdnrC7eJF
+qzEwHRK+9xkPP7WEHX1RuBocEY/YaMZHlG1/tHR+AGYvyjEzX8/HZDOxhFsQ
+gP79KdqpfXxk6g93H5wOwNtL2e5ubXyY2nvEMHMCQTXM66GP8bFre/iY4WQg
+Qp/sdHvIJGC1Qt7J+hKIory5rWdYBK5NpVaLpgJxSN7KyHcgYKBSiTNnkagJ
+z/7Fg02guq6jfHguCd9PFq5HnQh0vHF167QiwYrUTiUtI2ASZ7w734vEka4t
+7GEQuMSxDjzqQ2L223NW14UENn7g2LSBhMHset0hEYETeyS3x8Qk1CytWCwm
+4FmjNJcHkXiQnl592J9A7MBfzaJoEppR02/ItQSoxycLozeTaJD+uYweTKB+
+K1WWGUtCr7BZMv7VE19sqY0JJJL1t1uqQwgUWkVtYOwgcXZAs3U0lAAxpOB6
+p5LgvDa6eiuMQO/pXTMRaSS0K/frKsMJ2HiUnixJJ9Edb6YviiDQTlFn1f9A
+YnGF/UuzSAJbOuuDO7NIVF/ZenL4q+eVtNq9UpIIyvoQ3BZF4MKGzn9mfiTh
+qGztL5ES+A8x0gVc
+     "]]}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  ImageSize->{501., Automatic},
+  Method->{},
+  PlotRange->{{0, 55}, {0., 15.67883958603359}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output",
+ CellChangeTimes->{
+  3.630742886203862*^9, 3.6307429691176047`*^9, {3.63074301571327*^9, 
+   3.63074302235765*^9}, {3.6307430845322065`*^9, 3.630743146232735*^9}, 
+   3.6307431872130795`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"10", "*", 
+  RowBox[{"Log", "[", 
+   RowBox[{"10", ",", 
+    RowBox[{"\[Eta]", "[", 
+     RowBox[{"7", ",", "55"}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6307430409687147`*^9, 3.630743103991319*^9}, 
+   3.6307431631947055`*^9, {3.630743210620418*^9, 3.6307432108844333`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", "15.678839681980538`"}]], "Output",
+ CellChangeTimes->{3.630743211141448*^9}]
+}, Open  ]],
+
+Cell[BoxData["`"], "Input",
+ CellChangeTimes->{{3.6307432067911987`*^9, 3.6307432069332075`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Free", " ", "Space", " ", "loss"}], ",", " ", 
+    RowBox[{"f", " ", "in", " ", "GHz"}], ",", " ", 
+    RowBox[{"d", " ", "in", " ", "km"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"LFSL", "[", 
+     RowBox[{"f_", ",", "d_"}], "]"}], ":=", " ", 
+    RowBox[{"92.4", "+", 
+     RowBox[{"20", 
+      RowBox[{"Log", "[", 
+       RowBox[{"10", ",", "f"}], "]"}]}], "+", 
+     RowBox[{"20", 
+      RowBox[{"Log", "[", 
+       RowBox[{"10", ",", "d"}], "]"}]}]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"f", " ", "\"\< GHz\>\""}], ",", 
+        RowBox[{
+         RowBox[{"LFSL", "[", 
+          RowBox[{"f", ",", "1100"}], "]"}], " ", "\"\< db\>\""}]}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"f", ",", "10", ",", "100", ",", "10"}], "}"}]}], "]"}], "//", 
+    "MatrixForm"}]}]}]], "Input",
+ CellChangeTimes->{{3.6307470716052537`*^9, 3.6307472361766663`*^9}, {
+  3.630747308246789*^9, 3.6307473861812468`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"10", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"173.2278537031645`", " ", "\<\" db\"\>"}]},
+     {
+      RowBox[{"20", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"179.24845361644412`", " ", "\<\" db\"\>"}]},
+     {
+      RowBox[{"30", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"182.77027879755775`", " ", "\<\" db\"\>"}]},
+     {
+      RowBox[{"40", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"185.26905352972375`", " ", "\<\" db\"\>"}]},
+     {
+      RowBox[{"50", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"187.20725378988487`", " ", "\<\" db\"\>"}]},
+     {
+      RowBox[{"60", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"188.79087871083735`", " ", "\<\" db\"\>"}]},
+     {
+      RowBox[{"70", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"190.12981450344964`", " ", "\<\" db\"\>"}]},
+     {
+      RowBox[{"80", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"191.28965344300335`", " ", "\<\" db\"\>"}]},
+     {
+      RowBox[{"90", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"192.31270389195097`", " ", "\<\" db\"\>"}]},
+     {
+      RowBox[{"100", " ", "\<\" GHz\"\>"}], 
+      RowBox[{"193.2278537031645`", " ", "\<\" db\"\>"}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.630747357598612*^9, 3.630747386559268*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"20", " ", 
+   RowBox[{"Log", "[", 
+    RowBox[{"10", ",", "50000."}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.6308722244463196`*^9, 3.630872245971551*^9}, {
+  3.630872390566821*^9, 3.6308724028465233`*^9}}],
+
+Cell[BoxData["93.97940008672037`"], "Output",
+ CellChangeTimes->{{3.630872237284054*^9, 3.6308722478696594`*^9}, {
+  3.6308723912548604`*^9, 3.630872403503561*^9}}]
+}, Open  ]]
+},
+WindowSize->{707, 857},
+WindowMargins->{{143, Automatic}, {Automatic, 30}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1602, 49, 149, "Input"],
+Cell[2184, 73, 2275, 46, 332, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4496, 124, 311, 7, 31, "Input"],
+Cell[4810, 133, 105, 2, 31, "Output"]
+}, Open  ]],
+Cell[4930, 138, 97, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[5052, 143, 1118, 32, 72, "Input"],
+Cell[6173, 177, 1726, 46, 162, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7936, 228, 267, 6, 52, "Input"],
+Cell[8206, 236, 164, 2, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
